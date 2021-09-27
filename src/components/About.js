@@ -2,13 +2,21 @@ import React, {useState} from 'react'
 
 
 export default function About(props) {
-  const [myStyle, setmyStyle] = useState({
-    color: 'black',
-    backgroundColor: 'white'
-})
+//   const [myStyle, setmyStyle] = useState({
+//     color: 'black',
+//     backgroundColor: 'white'
+// })
+let myStyle={
+  color: props.mode === 'dark'?'white':'black',
+  backgroundColor: props.mode === 'dark'?'black':'white'
+  
+}
+
+
     return (
        <>
-       {/* <body onload={toggleStyle()}/> */}
+       
+      
        <h1 className = "container " style={myStyle}>About us</h1>
        <div className="container"  style={myStyle} >
        <div className="accordion" id="accordionExample">

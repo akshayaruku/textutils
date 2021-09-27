@@ -73,7 +73,7 @@ function App() {
 <Alert alert={alert}/>
 <Switch>
           <Route exact path="/about"  >
-            <About  />
+            <About mode={mode} />
             
           </Route>
          
